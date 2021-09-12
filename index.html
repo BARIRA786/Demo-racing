@@ -11,7 +11,27 @@
 <!--Database code starts here: The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-database.js"></script>
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyBO-yaEOVNRNV0-yZMio1HRP_fBgk9bQU4",
+  authDomain: "multiplayer-car-racing-g-be512.firebaseapp.com",
+  projectId: "multiplayer-car-racing-g-be512",
+  storageBucket: "multiplayer-car-racing-g-be512.appspot.com",
+  messagingSenderId: "678097239914",
+  appId: "1:678097239914:web:ba873ba37cf2ebbc37af13",
+  measurementId: "G-DDT0B6DNP5"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
 
